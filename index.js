@@ -9,7 +9,7 @@ const Koa = require('koa');
 const fs = require('fs');
 
 let app = new Koa();
-let start = new Date(2018, 10, 11);
+let start = new Date(2019, 9, 2);
 let index = fs.readFileSync('www/index.html', 'utf8');
 
 // Want to make a random list I can pick from one at a time
@@ -67,13 +67,13 @@ let drawings = shuffle.shuffle([
   'A cool fucking map',
   'A fucking massive iceberg',
   'A fucking scary zombie',
-], 'whatthefuckshouldidraw');
+], 'whatthefuckshouldidrawagain');
 
 // But I already decided this is the first topic
-drawings.unshift('A fucking beautiful swan!');
+//drawings.unshift('A fucking beautiful swan!');
 
 // And duh
-drawings.splice(6, 0, 'A fucking santa obviously');
+drawings.splice(12, 0, 'A fucking santa obviously');
 
 console.log(drawings.length)
 
